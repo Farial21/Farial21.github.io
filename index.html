@@ -2,14 +2,59 @@
 <html lang="en">
     <head>
         <title>Farial Azmain</title>
-    </head>
-    <body>
-        <h1>Hello</h1>
-        <p>
-            Welcome to this page!<br/>
-            You will find a cat picture here.<br/>
-            <img src= "cat.jpg"/>
+        <style>
+            .profile_header{
+                text-align: center;
+                background-color: black; 
+                color: white;
+                padding-top: 4vh;
+                padding-bottom: 4vh;
+            }
+            .h2{
+                margin-bottom: 0pt;
+                color: #444444; 
+            }
+            .p{
+                margin-top: 0pt;
+                font-size: small;
+            }
+            .body {
+                background-image: linear-gradient(to right, rgb(0, 81, 255) , rgb(33, 141, 168));
+            }
+            .content_cell{
+                width: 50%;
+                padding-left: 1rem;
+                padding-left: 1rem;
+                background-color: white;
+            }
 
-        </p>
+        </style>
+    </head>
+    <body class="body">
+        <table style ="width:60%; height:50%; margin-left:auto; margin-right:auto;" >
+            <tbody>
+                <tr>
+                    <td style="width:50%">
+                        <div class = "profile_header">
+                            <img src = "profile.jpg" alt= "Profile Picture Place Holder" style= "height: 100px">
+                            </br>
+                            <span style="font-family: Calibri">
+                                <h1 style="font-size: medium">Farial Azmain</h1>
+                                <p>Student</p>
+                            </span>
+                        </div>
+                    </td>
+                    <td class = "content_cell">
+                        <div class="h2">
+                            <h2>Student</h2>
+                            <p>Studying Computer Science at Assumption University.</p>
+                            <h2>Programming Languages</h2>
+                            <p>Python, Javascript</p>
+                            
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
