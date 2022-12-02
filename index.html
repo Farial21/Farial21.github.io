@@ -2,13 +2,18 @@
 <html lang="en">
     <head>
         <title>Farial Azmain</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
         <style>
+            html * {
+            font-family: Arial !important;
+            }
             .profile_header{
                 text-align: center;
                 background-color: black; 
                 color: white;
                 padding-top: 4vh;
                 padding-bottom: 4vh;
+                vertical-align:middle;
             }
             .h2{
                 margin-bottom: 0pt;
@@ -26,22 +31,21 @@
                 padding-left: 1rem;
                 padding-left: 1rem;
                 background-color: white;
+                vertical-align:middle;
             }
 
         </style>
     </head>
     <body class="body">
-        <table style ="width:60%; height:50%; margin-left:auto; margin-right:auto;" >
+        <table style ="width:60%; height:80%; margin-left:auto; margin-right:auto;">
             <tbody>
                 <tr>
                     <td style="width:50%">
                         <div class = "profile_header">
                             <img src = "profile.jpg" alt= "Profile Picture Place Holder" style= "height: 100px">
                             </br>
-                            <span style="font-family: Calibri">
-                                <h1 style="font-size: medium">Farial Azmain</h1>
-                                <p>Student</p>
-                            </span>
+                            <h1 style="font-size: medium"> <span id ="myName">Farial Azmain</span></h1>
+                            <p>Student</p>
                         </div>
                     </td>
                     <td class = "content_cell">
@@ -56,5 +60,28 @@
                 </tr>
             </tbody>
         </table>
+        <button onclick="changeName()">Change Name</button>
+
+        <script>
+            console.log("Hello");
+            var x = 10;
+            var y = 20;
+            var z = x + y;
+            console.log(z);
+
+            var nameAsJane = false;
+
+            function changeName(){
+                //change name
+                var span = document.getElementById("myName");
+                if (nameAsJane){
+                    span.innerHTML = "Farial Azmain";
+                }else{
+                    span.innerHTML = "Jane Doe";
+                }
+                
+            }
+
+        </script>
     </body>
 </html>
