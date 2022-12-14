@@ -30,3 +30,7 @@
 .product_table tfoot{
     background-color: aquamarine;
 }
+
+.icon{
+    width: 1em;
+}
