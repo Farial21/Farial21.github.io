@@ -1,0 +1,26 @@
+[
+    {
+        "name": "James Anderson",
+        "email": "jimmy@gmail.com",
+        "phone": "091-123-4566"
+
+    },
+    {
+        "name": "Ben Stokes",
+        "email": "stokesy@gmail.com",
+        "phone": "096-773-6786"
+
+    },
+    {
+        "name": "Jos Buttler",
+        "email": "jos.not.josh@gmail.com",
+        "phone": "081-786-2346"
+
+    },
+    {
+        "name": "Mathew Potts",
+        "email": "potsy@gmail.com",
+        "phone": "091-786-5416"
+
+    }
+]
