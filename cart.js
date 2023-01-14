@@ -40,11 +40,10 @@ function addToCart() {
     if ($('#qty').val()=="" || $('#ppu').val()=="" || $('#discount').val()==""){
         alert("Form not complete")
         console.log("Form not complete")
-    }else if (checkDup()== true) {
-        alert("Product has already been added")
-        console.log("Product has already been added")
+    }else if (mergeDup()== true) {
+        console.log("Product merged with existing product")
+        loadData()
     } else {
-        //checkDup()
         $('#productBody').html("")
         products.push(productObj)
         loadData()
@@ -96,11 +95,13 @@ function loadData() {
 
 }
 
-function checkDup(){
+function mergeDup(){
     let dup = false
     for(let p in products){
         if(products[p].name == $('#products').val() && products[p].ppu == $('#ppu').val()){
-            dup = true 
+            dup = true
+            products[p].quantity = (products[p].quantity * 1) + (($('#qty').val()) * 1)
+            products[p].discount = (products[p].discount * 1) + (($('#discount').val()) * 1)
         }
     }
     return dup
