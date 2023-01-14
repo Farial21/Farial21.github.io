@@ -44,7 +44,7 @@
 }
 
 .form input, select{
-    width: 20rem;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -54,7 +54,7 @@
 }
 
 .form button{
-    width: 20rem;
+    width: 100%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -65,20 +65,22 @@
 
 .form{
     float: left; 
-    width: 17%;
+    width: 20%;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
     margin: 20px;
     margin-left: 20px;
+    
 }
 
 .display{
     float: left; 
     width: 50%;
     /* border-radius: 5px;
-    background-color: #f2f2f2; */
+    /* background-color: #f2f2f2; */
     padding: 10px;
     margin: 20px;
     padding-top: 0px;
+    
 }
